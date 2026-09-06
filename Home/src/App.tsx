@@ -4,7 +4,6 @@ import { ResumeView } from '@/components/ResumeView';
 import { ProjectsView } from '@/components/ProjectsView';
 import { CubeRunnerView } from '@/components/CubeRunnerView';
 import { SmartNotesView } from '@/components/SmartNotesView';
-import { MagneticCursor } from '@/components/ui/magnetic-cursor';
 
 type Route = 'home' | 'resume' | 'projects' | 'cube-runner' | 'smart-notes';
 
@@ -235,17 +234,7 @@ export function App() {
     );
   };
 
-  return (
-    <MagneticCursor
-      key={currentRoute}
-      magneticFactor={0.35}
-      blendMode="exclusion"
-      cursorSize={28}
-      contrastBoost={1.5}
-    >
-      {renderContent()}
-    </MagneticCursor>
-  );
+  return renderContent();
 }
 
 export default App;
