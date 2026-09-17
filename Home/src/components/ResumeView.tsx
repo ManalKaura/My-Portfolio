@@ -19,7 +19,8 @@ import {
   UserCheck,
   Flame,
   ArrowLeft,
-  ChevronDown
+  ChevronDown,
+  FileDown
 } from 'lucide-react';
 import OrangeNoiseBackground from './ui/background-snippets-noise-effect11';
 import CyanGridNoiseBackground from './ui/cyan-grid-noise-background';
@@ -230,6 +231,16 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
               </button>
             </div>
 
+            <a
+              href="/Manal_Kaura_Resume.pdf"
+              download="Manal_Kaura_Resume.pdf"
+              className="px-3 py-1.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-orange-400 font-semibold text-xs transition border border-orange-500/30 flex items-center gap-1.5 shadow-md hover:scale-105"
+              title="Download Updated Resume (PDF)"
+            >
+              <FileDown className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Resume PDF</span>
+            </a>
+
             <button
               onClick={() => scrollToSection('contact')}
               className="px-3.5 py-1.5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-semibold text-xs transition shadow-lg shadow-orange-500/25 flex items-center gap-1.5 cursor-pointer"
@@ -389,6 +400,16 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
 
                   {/* Social & Action Buttons */}
                   <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-3">
+                    <a
+                      href="/Manal_Kaura_Resume.pdf"
+                      download="Manal_Kaura_Resume.pdf"
+                      className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-xs sm:text-sm transition-all shadow-lg shadow-orange-500/25 hover:scale-105 cursor-pointer ring-2 ring-orange-400/30"
+                      title="Download Updated Resume (PDF)"
+                    >
+                      <FileDown className="w-4 h-4" />
+                      <span>Download Resume</span>
+                    </a>
+
                     <a
                       href="https://www.linkedin.com/in/manal-kaura-655a23386"
                       target="_blank"
@@ -734,6 +755,85 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                 </div>
               </Card3D>
 
+              {/* Project 3: AI-Assisted Personal Portfolio */}
+              <Card3D className="p-8 border-purple-500/30" glowColor="rgba(168, 85, 247, 0.25)" depth={15}>
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                  
+                  <div className="lg:col-span-6 space-y-4">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-bold font-mono">
+                      <Code2 className="w-3.5 h-3.5" /> REACT, TYPESCRIPT &amp; AI
+                    </div>
+
+                    <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                      AI-Assisted Personal Portfolio
+                    </h3>
+
+                    <p className="text-slate-300 text-sm leading-relaxed">
+                      Built and deployed a responsive personal portfolio using React, TypeScript, Tailwind CSS, and AI-assisted development. Utilized AI agents and iterative prompt engineering for UI design, code generation, debugging, feature integration, and deployment.
+                    </p>
+
+                    {/* Highlights */}
+                    <div className="space-y-2.5 pt-1">
+                      {[
+                        'Built responsive portfolio architecture leveraging modern React, TypeScript, and Tailwind CSS.',
+                        'Utilized AI agents and iterative prompt engineering for rapid UI design, component creation, and debugging.',
+                        'Implemented smooth Framer Motion animations, 3D card tilts, and interactive procedural visualizers.',
+                        'Configured seamless multi-route navigation, cross-app showcase integrations, and optimized production builds.',
+                      ].map((point, idx) => (
+                        <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-1.5 shrink-0" />
+                          <span>{point}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Tech Badges */}
+                    <div className="flex flex-wrap gap-2 pt-3">
+                      {['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'AI-Assisted Dev', 'Vite', 'Lucide Icons'].map((tag) => (
+                        <span key={tag} className="text-[11px] font-mono px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-purple-300">
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="pt-2 flex flex-wrap items-center gap-3">
+                      <a
+                        href="https://github.com/ManalKaura"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs transition shadow-lg shadow-purple-500/20 hover:scale-105"
+                        title="View Portfolio Repository on GitHub"
+                      >
+                        <GithubIcon className="w-3.5 h-3.5" />
+                        <span>Source Code</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Portfolio Screenshot / Visual Showcase */}
+                  <div className="lg:col-span-6">
+                    <div className="relative rounded-2xl overflow-hidden border-2 border-purple-500/40 bg-slate-950 shadow-2xl transition-all duration-500 hover:scale-[1.02] hover:border-purple-500/80 hover:shadow-[0_0_35px_rgba(168,85,247,0.3)]">
+                      <div className="aspect-video w-full overflow-hidden bg-slate-900 flex items-center justify-center p-6 bg-gradient-to-br from-slate-950 via-purple-950/20 to-slate-950">
+                        <div className="text-center space-y-3">
+                          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-500 to-indigo-500 mx-auto flex items-center justify-center shadow-lg shadow-purple-500/30">
+                            <Code2 className="w-6 h-6 text-white" />
+                          </div>
+                          <h4 className="text-lg font-bold text-white tracking-tight">Interactive Portfolio Suite</h4>
+                          <p className="text-xs text-slate-400 max-w-sm">Engineered with modern web architecture, dynamic particle backgrounds &amp; 3D perspective shaders.</p>
+                        </div>
+                      </div>
+                      
+                      {/* Top Overlay Badge */}
+                      <div className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-slate-950/80 backdrop-blur-md border border-purple-500/40 text-[10px] font-mono font-bold text-purple-300 flex items-center gap-1.5">
+                        <Code2 className="w-3 h-3 text-purple-400" /> React 19 + TypeScript
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </Card3D>
+
             </div>
           </motion.div>
         </section>
@@ -757,55 +857,115 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
               </h2>
             </div>
 
-            <Card3D className="p-8 border-slate-700/80" glowColor="rgba(249, 115, 22, 0.2)">
-              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
-                <div className="space-y-1">
-                  <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-[11px] font-mono font-semibold">
-                    09/2025 — Current
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">Member</h3>
-                  <h4 className="text-base font-semibold text-orange-400">Thapar Mathematical Society</h4>
-                </div>
-
-                <div className="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono self-start">
-                  Thapar Institute (TIET)
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {[
-                  {
-                    title: 'Content Creation',
-                    desc: 'Coordinated and developed high-impact technical and visual content for major society events.',
-                    icon: Sparkles,
-                  },
-                  {
-                    title: 'Event Management',
-                    desc: 'Collaborated cross-functionally with team members for smooth event planning and execution.',
-                    icon: Layers,
-                  },
-                  {
-                    title: 'Student Outreach',
-                    desc: 'Designed engaging campaigns that maximized student participation across departments.',
-                    icon: Award,
-                  },
-                ].map((exp) => {
-                  const Icon = exp.icon;
-                  return (
-                    <div
-                      key={exp.title}
-                      className="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-2 hover:border-slate-700 transition"
-                    >
-                      <div className="flex items-center gap-2 text-orange-400">
-                        <Icon className="w-4 h-4" />
-                        <h5 className="text-xs font-bold text-white">{exp.title}</h5>
-                      </div>
-                      <p className="text-xs text-slate-300 leading-relaxed">{exp.desc}</p>
+            <div className="space-y-6">
+              {/* Experience 1: Markfin Society (Core, 09/2026 to Present) */}
+              <Card3D className="p-8 border-orange-500/30 shadow-[0_0_40px_-15px_rgba(249,115,22,0.2)]" glowColor="rgba(249, 115, 22, 0.25)">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
+                  <div className="space-y-1">
+                    <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[11px] font-mono font-semibold">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+                      09/2026 — Present
                     </div>
-                  );
-                })}
-              </div>
-            </Card3D>
+                    <h3 className="text-2xl font-bold text-white">Core</h3>
+                    <h4 className="text-base font-semibold text-orange-400">Markfin Society</h4>
+                  </div>
+
+                  <div className="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono self-start">
+                    Thapar Institute (TIET)
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {[
+                    {
+                      title: 'Creative Initiatives',
+                      desc: 'Contributed creative ideas for events and society initiatives.',
+                      icon: Sparkles,
+                    },
+                    {
+                      title: 'Content & Promotion',
+                      desc: 'Assisted in creating engaging content and promotional material.',
+                      icon: Layers,
+                    },
+                    {
+                      title: 'Event Engagement',
+                      desc: 'Helped develop concepts to improve event engagement and presentation.',
+                      icon: Award,
+                    },
+                    {
+                      title: 'Planning & Execution',
+                      desc: 'Collaborated with team members on event planning and execution.',
+                      icon: Briefcase,
+                    },
+                  ].map((exp) => {
+                    const Icon = exp.icon;
+                    return (
+                      <div
+                        key={exp.title}
+                        className="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-2 hover:border-orange-500/40 transition"
+                      >
+                        <div className="flex items-center gap-2 text-orange-400">
+                          <Icon className="w-4 h-4" />
+                          <h5 className="text-xs font-bold text-white">{exp.title}</h5>
+                        </div>
+                        <p className="text-xs text-slate-300 leading-relaxed">{exp.desc}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Card3D>
+
+              {/* Experience 2: Thapar Mathematical Society (Member, 09/2025 to 08/2026) */}
+              <Card3D className="p-8 border-slate-700/80" glowColor="rgba(249, 115, 22, 0.2)">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
+                  <div className="space-y-1">
+                    <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-[11px] font-mono font-semibold">
+                      09/2025 — 08/2026
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">Member</h3>
+                    <h4 className="text-base font-semibold text-orange-400">Thapar Mathematical Society</h4>
+                  </div>
+
+                  <div className="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono self-start">
+                    Thapar Institute (TIET)
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {[
+                    {
+                      title: 'Content Creation',
+                      desc: 'Coordinated content creation for society events.',
+                      icon: Sparkles,
+                    },
+                    {
+                      title: 'Event Planning',
+                      desc: 'Collaborated with team members for event planning and management.',
+                      icon: Layers,
+                    },
+                    {
+                      title: 'Student Outreach',
+                      desc: 'Designed engaging content for student outreach.',
+                      icon: Award,
+                    },
+                  ].map((exp) => {
+                    const Icon = exp.icon;
+                    return (
+                      <div
+                        key={exp.title}
+                        className="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-2 hover:border-slate-700 transition"
+                      >
+                        <div className="flex items-center gap-2 text-orange-400">
+                          <Icon className="w-4 h-4" />
+                          <h5 className="text-xs font-bold text-white">{exp.title}</h5>
+                        </div>
+                        <p className="text-xs text-slate-300 leading-relaxed">{exp.desc}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Card3D>
+            </div>
           </motion.div>
         </section>
 
