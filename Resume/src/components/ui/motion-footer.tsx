@@ -369,16 +369,18 @@ export function CinematicFooter() {
               {/* Primary Action Pills */}
               <div className="flex flex-wrap justify-center gap-4 w-full">
                 
-                {/* View Resume Magnetic Pill */}
+                {/* Download Resume Magnetic Pill */}
                 <MagneticButton
                   as="a"
-                  href="#hero"
-                  className="footer-glass-pill px-7 sm:px-9 py-4 rounded-2xl text-white font-bold text-sm sm:text-base flex items-center gap-3 group shadow-xl"
+                  href="/Manal_Kaura_Resume.pdf"
+                  download="Manal_Kaura_Resume.pdf"
+                  className="footer-glass-pill px-7 sm:px-9 py-4 rounded-2xl text-white font-bold text-sm sm:text-base flex items-center gap-3 group shadow-xl cursor-pointer"
+                  title="Download Updated Resume (PDF)"
                 >
                   <div className="p-2 rounded-xl bg-amber-500/20 text-amber-400 group-hover:bg-amber-500 group-hover:text-white transition-colors">
                     <FileText className="w-5 h-5" />
                   </div>
-                  <span>Resume Profile</span>
+                  <span>Download Resume</span>
                 </MagneticButton>
 
                 {/* Contact Email Magnetic Pill */}
