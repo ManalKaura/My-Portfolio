@@ -359,7 +359,7 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                   </h1>
 
                   <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
-                    Aspiring Software Engineer specializing in <span className="text-orange-400 font-semibold">Game Development (Unity 3D / C#)</span>, <span className="text-cyan-400 font-semibold">Android App Development (Kotlin &amp; Jetpack Compose)</span>, and <span className="text-amber-300 font-semibold">Data Structures &amp; Algorithms (C++)</span>.
+                    Computer Engineering student with hands-on experience building a <span className="text-orange-400 font-semibold">Unity game</span>, an <span className="text-cyan-400 font-semibold">Android app</span>, and a <span className="text-amber-300 font-semibold">React web portfolio</span>. Strong foundation in data structures and algorithms; seeking a software development internship.
                   </p>
 
                   {/* Contact Info Pills */}
@@ -528,9 +528,9 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                     {/* Highlights */}
                     <div className="space-y-2.5 pt-1">
                       {[
-                        'Built 3D endless runner mechanics from scratch in Unity using C# scripting.',
-                        'Implemented procedural obstacle spawning, collision detection, and increasing difficulty scaling.',
-                        'Engineered responsive player controls, camera follow damping, and optimized rendering performance for consistent 60 FPS.',
+                        'Built a 3D endless runner game in Unity with 5 core systems: player movement, obstacle avoidance, collision detection, progressive difficulty, and live score tracking.',
+                        'Implemented 3 gameplay mechanics in C#: smooth camera follow, procedural obstacle spawning, and responsive player controls.',
+                        'Optimized object handling and game logic to maintain smooth real-time performance.',
                       ].map((point, idx) => (
                         <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-orange-400 mt-1.5 shrink-0" />
@@ -641,20 +641,19 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                     </div>
 
                     <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                      Smart Notes Application
+                      Smart Login Application
                     </h3>
 
                     <p className="text-slate-300 text-sm leading-relaxed">
-                      A comprehensive native Android notes and productivity suite engineered with Kotlin and Jetpack Compose adhering strictly to Material Design 3 guidelines.
+                      An Android login app engineered with Kotlin and Jetpack Compose adhering to Material Design principles.
                     </p>
 
                     {/* Highlights */}
                     <div className="space-y-2.5 pt-1">
                       {[
-                        'Developed reactive UI with Jetpack Compose, handling dynamic notes state, search filtering, and category cards.',
-                        'Implemented secure authentication screen with password visibility toggle and real-time form validation.',
-                        'Built robust note creation, editing, and deletion with instant local persistence and timestamp tracking.',
-                        'Architected modular, reusable UI components following clean Android architecture best practices.',
+                        'Developed an Android login app with 3 interactive features: password visibility toggle, real-time email and password validation, and dynamic login button state.',
+                        'Managed UI state with Jetpack Compose State to validate 2 input fields (email and password) instantly and optimized keyboard input handling.',
+                        'Designed a responsive, user-friendly interface with reusable Material Design components following modern Android practices.',
                       ].map((point, idx) => (
                         <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-1.5 shrink-0" />
@@ -665,7 +664,7 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
 
                     {/* Tech Badges */}
                     <div className="flex flex-wrap gap-2 pt-3">
-                      {['Kotlin', 'Jetpack Compose', 'Material Design 3', 'Compose State', 'Room / SQLite', 'Search Filtering', 'Android Studio'].map((tag) => (
+                      {['Kotlin', 'Jetpack Compose', 'Material Design', 'Compose State', 'Form Validation', 'Android Studio'].map((tag) => (
                         <span key={tag} className="text-[11px] font-mono px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-cyan-300">
                           #{tag}
                         </span>
@@ -769,16 +768,14 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                     </h3>
 
                     <p className="text-slate-300 text-sm leading-relaxed">
-                      Built and deployed a responsive personal portfolio using React, TypeScript, Tailwind CSS, and AI-assisted development. Utilized AI agents and iterative prompt engineering for UI design, code generation, debugging, feature integration, and deployment.
+                      Built and deployed a responsive personal portfolio website using React, TypeScript, Tailwind CSS, and AI-assisted development.
                     </p>
 
                     {/* Highlights */}
                     <div className="space-y-2.5 pt-1">
                       {[
-                        'Built responsive portfolio architecture leveraging modern React, TypeScript, and Tailwind CSS.',
-                        'Utilized AI agents and iterative prompt engineering for rapid UI design, component creation, and debugging.',
-                        'Implemented smooth Framer Motion animations, 3D card tilts, and interactive procedural visualizers.',
-                        'Configured seamless multi-route navigation, cross-app showcase integrations, and optimized production builds.',
+                        'Built and deployed a responsive personal portfolio website using 3 modern web technologies: React, TypeScript, and Tailwind CSS.',
+                        'Leveraged AI agents and iterative prompt engineering across 5 development stages: UI design, code generation, debugging, feature integration, and deployment.',
                       ].map((point, idx) => (
                         <div key={idx} className="flex items-start gap-2.5 text-xs text-slate-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-1.5 shrink-0" />
@@ -858,15 +855,15 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
             </div>
 
             <div className="space-y-6">
-              {/* Experience 1: Markfin Society (Core, 09/2026 to Present) */}
+              {/* Experience 1: Markfin Society (Core Member, Sep. 2026 – Present) */}
               <Card3D className="p-8 border-orange-500/30 shadow-[0_0_40px_-15px_rgba(249,115,22,0.2)]" glowColor="rgba(249, 115, 22, 0.25)">
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
                   <div className="space-y-1">
                     <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[11px] font-mono font-semibold">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-                      09/2026 — Present
+                      Sep. 2026 – Present
                     </div>
-                    <h3 className="text-2xl font-bold text-white">Core</h3>
+                    <h3 className="text-2xl font-bold text-white">Core Member</h3>
                     <h4 className="text-base font-semibold text-orange-400">Markfin Society</h4>
                   </div>
 
@@ -875,26 +872,21 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
                     {
-                      title: 'Creative Initiatives',
-                      desc: 'Contributed creative ideas for events and society initiatives.',
+                      title: 'Creative Concepts',
+                      desc: 'Proposed and designed creative concepts for society events and initiatives to boost participation.',
                       icon: Sparkles,
                     },
                     {
                       title: 'Content & Promotion',
-                      desc: 'Assisted in creating engaging content and promotional material.',
+                      desc: 'Created content and promotional material to publicize events and drive student engagement.',
                       icon: Layers,
                     },
                     {
-                      title: 'Event Engagement',
-                      desc: 'Helped develop concepts to improve event engagement and presentation.',
-                      icon: Award,
-                    },
-                    {
-                      title: 'Planning & Execution',
-                      desc: 'Collaborated with team members on event planning and execution.',
+                      title: 'Event Planning & Execution',
+                      desc: 'Collaborated with a team to plan, coordinate, and execute events.',
                       icon: Briefcase,
                     },
                   ].map((exp) => {
@@ -915,12 +907,12 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                 </div>
               </Card3D>
 
-              {/* Experience 2: Thapar Mathematical Society (Member, 09/2025 to 08/2026) */}
+              {/* Experience 2: Thapar Mathematical Society (Member, Sep. 2025 – Aug. 2026) */}
               <Card3D className="p-8 border-slate-700/80" glowColor="rgba(249, 115, 22, 0.2)">
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
                   <div className="space-y-1">
                     <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300 text-[11px] font-mono font-semibold">
-                      09/2025 — 08/2026
+                      Sep. 2025 – Aug. 2026
                     </div>
                     <h3 className="text-2xl font-bold text-white">Member</h3>
                     <h4 className="text-base font-semibold text-orange-400">Thapar Mathematical Society</h4>
@@ -931,22 +923,17 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {[
                     {
-                      title: 'Content Creation',
-                      desc: 'Coordinated content creation for society events.',
+                      title: 'Content & Outreach',
+                      desc: 'Coordinated content creation and student outreach for society events and campaigns.',
                       icon: Sparkles,
                     },
                     {
-                      title: 'Event Planning',
-                      desc: 'Collaborated with team members for event planning and management.',
-                      icon: Layers,
-                    },
-                    {
-                      title: 'Student Outreach',
-                      desc: 'Designed engaging content for student outreach.',
-                      icon: Award,
+                      title: 'Event Management',
+                      desc: 'Worked with team members on event planning, scheduling, and management.',
+                      icon: Briefcase,
                     },
                   ].map((exp) => {
                     const Icon = exp.icon;
@@ -993,39 +980,39 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
               {/* College */}
               <Card3D className="p-6 space-y-4 border-orange-500/30" glowColor="rgba(249, 115, 22, 0.25)">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono font-bold text-orange-400">2025 — 2029 (Expected 06/2029)</span>
+                  <span className="text-xs font-mono font-bold text-orange-400">Expected Jun. 2029</span>
                   <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">
-                    Active
+                    Punjab
                   </span>
                 </div>
 
                 <div className="space-y-1">
-                  <h3 className="text-lg font-bold text-white">BE Computer Engineering</h3>
-                  <p className="text-xs text-slate-300">Thapar Institute of Engineering and Technology</p>
+                  <h3 className="text-lg font-bold text-white">Bachelor of Engineering (B.E.) in Computer Engineering</h3>
+                  <p className="text-xs text-slate-300">Thapar Institute of Engineering and Technology (Deemed to be University)</p>
                 </div>
 
                 <div className="p-3 rounded-xl bg-orange-500/10 border border-orange-500/30 flex items-center justify-between">
-                  <span className="text-xs font-medium text-slate-200">Current CGPA</span>
-                  <span className="text-base font-black text-orange-400 font-mono">8.0 CGPA</span>
+                  <span className="text-xs font-medium text-slate-200">CGPA</span>
+                  <span className="text-base font-black text-orange-400 font-mono">8.0/10</span>
                 </div>
               </Card3D>
 
               {/* Class 12th */}
               <Card3D className="p-6 space-y-4" glowColor="rgba(59, 130, 246, 0.2)">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono font-bold text-blue-400">Class 12th: 05/2025</span>
+                  <span className="text-xs font-mono font-bold text-blue-400">May 2025</span>
                   <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 text-[10px] font-bold">
-                    CBSE
+                    Ludhiana
                   </span>
                 </div>
 
                 <div className="space-y-1">
-                  <h3 className="text-lg font-bold text-white">Senior Secondary</h3>
-                  <p className="text-xs text-slate-300">Peace Public School – Ludhiana</p>
+                  <h3 className="text-lg font-bold text-white">Class 12 (CBSE)</h3>
+                  <p className="text-xs text-slate-300">Peace Public School</p>
                 </div>
 
                 <div className="p-3 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-between">
-                  <span className="text-xs font-medium text-slate-200">CBSE Board Score</span>
+                  <span className="text-xs font-medium text-slate-200">Score</span>
                   <span className="text-base font-black text-blue-400 font-mono">90.4%</span>
                 </div>
               </Card3D>
@@ -1033,19 +1020,19 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
               {/* Class 10th */}
               <Card3D className="p-6 space-y-4" glowColor="rgba(16, 185, 129, 0.2)">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono font-bold text-emerald-400">Class 10th: 05/2023</span>
+                  <span className="text-xs font-mono font-bold text-emerald-400">May 2023</span>
                   <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[10px] font-bold">
-                    CBSE
+                    Ludhiana
                   </span>
                 </div>
 
                 <div className="space-y-1">
-                  <h3 className="text-lg font-bold text-white">Secondary School</h3>
-                  <p className="text-xs text-slate-300">Peace Public School – Ludhiana</p>
+                  <h3 className="text-lg font-bold text-white">Class 10 (CBSE)</h3>
+                  <p className="text-xs text-slate-300">Peace Public School</p>
                 </div>
 
                 <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-between">
-                  <span className="text-xs font-medium text-slate-200">CBSE Board Score</span>
+                  <span className="text-xs font-medium text-slate-200">Score</span>
                   <span className="text-base font-black text-emerald-400 font-mono">91.4%</span>
                 </div>
               </Card3D>
