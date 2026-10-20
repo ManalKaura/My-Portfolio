@@ -350,7 +350,7 @@ export function CinematicFooter({ onNavigateResume, onNavigateProjects }: Cinema
                       <line x1="16" x2="8" y1="17" y2="17" />
                       <polyline points="10 9 9 9 8 9" />
                     </svg>
-                    Online Resume
+                    Resume
                   </MagneticButton>
                 )}
 
