@@ -15,7 +15,6 @@ import {
   Sparkles,
   Layers,
   Boxes,
-  Award,
   UserCheck,
   Flame,
   ArrowLeft,
