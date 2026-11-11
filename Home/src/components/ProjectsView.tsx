@@ -11,7 +11,8 @@ import {
   Cpu,
   ArrowUp,
   FileText,
-  Home
+  Home,
+  Download
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { RandomLetterSwap } from './ui/random-letter-swap';
@@ -342,6 +343,18 @@ export function ProjectsView({ onNavigateHome, onNavigateResume, onNavigateCubeR
                     >
                       <span>Launch Standalone Site</span>
                       <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                    </a>
+                  )}
+
+                  {section.id === 1 && (
+                    <a
+                      href="/CubeRunnerSetup.exe"
+                      download="CubeRunnerSetup.exe"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-300 hover:text-emerald-200 font-semibold text-xs sm:text-sm transition-all shadow-md shadow-emerald-500/10 hover:scale-105 cursor-pointer"
+                      title="Download 3D Cube Runner Setup for PC (Windows)"
+                    >
+                      <Download className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Download Setup</span>
                     </a>
                   )}
 

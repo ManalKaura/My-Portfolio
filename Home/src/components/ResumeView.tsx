@@ -19,7 +19,8 @@ import {
   Flame,
   ArrowLeft,
   ChevronDown,
-  FileDown
+  FileDown,
+  Download
 } from 'lucide-react';
 import OrangeNoiseBackground from './ui/background-snippets-noise-effect11';
 import CyanGridNoiseBackground from './ui/cyan-grid-noise-background';
@@ -573,6 +574,16 @@ export function ResumeView({ onNavigateHome, onNavigateProjects, onNavigateCubeR
                       >
                         <span>Launch Standalone Site</span>
                         <ExternalLink className="w-3 h-3 opacity-80" />
+                      </a>
+
+                      <a
+                        href="/CubeRunnerSetup.exe"
+                        download="CubeRunnerSetup.exe"
+                        className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-300 hover:text-emerald-200 font-semibold text-xs transition hover:scale-105 shadow-md shadow-emerald-500/10 cursor-pointer"
+                        title="Download 3D Cube Runner Setup for PC (Windows)"
+                      >
+                        <Download className="w-3.5 h-3.5 text-emerald-400" />
+                        <span>Download Setup</span>
                       </a>
 
                       <a

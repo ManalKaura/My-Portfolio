@@ -8,6 +8,7 @@ import {
   ArrowLeft,
   Home,
   ExternalLink,
+  Download,
 } from 'lucide-react';
 import { Header } from '@/components/ui/header';
 import { Footer } from '@/components/ui/footer';
@@ -114,8 +115,18 @@ const EnhancedShowcase = forwardRef<HTMLElement>((_props, ref) => {
                 </div>
               </div>
 
-              {/* GitHub Profile Button */}
-              <div className="pt-8 flex justify-center">
+              {/* Action Buttons: Download Setup & GitHub */}
+              <div className="pt-8 flex flex-wrap items-center justify-center gap-3">
+                <a
+                  href="/CubeRunnerSetup.exe"
+                  download="CubeRunnerSetup.exe"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-md hover:shadow-lg transition-all hover:scale-105 group cursor-pointer"
+                  title="Download 3D Cube Runner Setup for PC (Windows)"
+                >
+                  <Download className="w-4 h-4 text-white" />
+                  <span>Download Setup</span>
+                </a>
+
                 <a
                   href="https://github.com/ManalKaura/3D-Cube-Runner"
                   target="_blank"
@@ -176,6 +187,16 @@ export function CubeRunnerView({
               <span>3D CUBE RUNNER</span>
             </div>
           </div>
+
+          <a
+            href="/CubeRunnerSetup.exe"
+            download="CubeRunnerSetup.exe"
+            className="px-3.5 py-1.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-emerald-300 hover:text-emerald-200 font-semibold text-xs transition flex items-center gap-1.5 shadow-md hover:scale-105 cursor-pointer"
+            title="Download 3D Cube Runner Setup for PC (Windows)"
+          >
+            <Download className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Download Setup</span>
+          </a>
         </div>
       </header>
 

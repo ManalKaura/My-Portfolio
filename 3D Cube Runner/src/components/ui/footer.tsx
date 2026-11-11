@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { ContainerScroll } from '@/components/ui/container-scroll-animation';
-import { ArrowUp, Gamepad2, ExternalLink, Volume2, VolumeX } from 'lucide-react';
+import { ArrowUp, Gamepad2, ExternalLink, Volume2, VolumeX, Download } from 'lucide-react';
 
 const GithubIcon = ({ className = 'w-4 h-4' }: { className?: string }) => (
   <svg className={className} fill="currentColor" viewBox="0 0 24 24">
@@ -106,6 +106,16 @@ export function Footer() {
         </div>
 
         <div className="flex items-center gap-3">
+          <a
+            href="/CubeRunnerSetup.exe"
+            download="CubeRunnerSetup.exe"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-medium transition cursor-pointer shadow-lg shadow-emerald-600/30 hover:scale-105 active:scale-95 text-xs"
+            title="Download 3D Cube Runner Setup for PC (Windows)"
+          >
+            <Download className="w-3.5 h-3.5" />
+            <span>Download Setup</span>
+          </a>
+
           <a
             href="https://github.com/ManalKaura/3D-Cube-Runner"
             target="_blank"
